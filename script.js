@@ -2,7 +2,7 @@ var x = -1
 var y = -1
 var seziure = setInterval(blank);
 function blank(){
-    document.getElementById("test").style.backgroundColor = "white";
+    document.getElementById("test").style.backgroundColor = "gray";
 }
 clearInterval(seziure);
 
