@@ -1,0 +1,14 @@
+body{
+  height: 100vh;  
+  background-color: #101010;
+}
+div{
+  color: white;
+}
+button{
+  background-color: #101010;
+  border-color: lightblue;
+  border-width: 1px;
+  color: lightblue;
+  font-size: 15px;
+}
