@@ -1,8 +1,13 @@
 const router = require("express").Router();
 const path = require("path");
+const animeRoute = require("./anime");
+const canvasRoute = require("./canvas");
 
-router.get("/", async (req, res) =>{
-  res.sendFile(path.join(__dirname, "../views/index.html"));
+
+router.use("/anime", animeRoute);
+router.use("/canvas", canvasRoute);
+
+router.get("/", (req, res) =>{
+  res.send("Wrong Route!");
 })
-
 module.exports = router;
